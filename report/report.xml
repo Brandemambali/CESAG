@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="report_dup">
+            <t t-set="company" t-value="res_company"/>
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <!--<t t-call="web.external_layout">-->
+
+                    <div class="header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <br/>
+                                            <img t-if="company.logo"
+                                                 t-att-src="'data:image/png;base64,%s' % company.logo"
+                                                 style="height:95px;"/>
+
+                                            <p style="color:black;font-size:18px">Centre Africain d’Etudes
+                                                <br/>
+                                                Supérieures en Gestion
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="page">
+                            <br/>
+                        <br/>
+                        <br/>
+
+                        <div class="row">
+                            <h4 style="text-align:center;color:black;font-size:20px">
+                                <strong>
+                                    TARIF DUPLICATA
+                                </strong>
+                            </h4>
+                            <strong></strong>
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <table class="table table-condensed table-bordered">
+                            <thead class="text-center" style="">
+                                <tr class="table-active">
+                                    <th class="table-primary text-center" style="font-size:13px">INTITULE DU DUPLICATA
+                                    </th>
+                                    <th class="table-success text-center" style="font-size:13px">CONDITION D'OBTENTION
+                                    </th>
+                                    <th class="table-success text-center" style="font-size:13px">DELAI D'OBTENTION</th>
+                                    <th class="table-secondary text-center" style="font-size:13px">TARIF</th>
+                                </tr>
+                            </thead>
+                            <tbody class="invoice_tbody">
+                                <tr>
+                                    <td class="text-right text-center">
+                                        <br/>
+                                        Acte de Convocation au Concours D'entree au CESAG
+                                    </td>
+                                    <td class="text-right text-center">
+                                        <br/>
+                                        Dépôt d’un Dossier de Candidature au Concours d’entrée (Scolarité).
+                                    </td>
+                                    <td class="text-right text-center">
+
+                                        <br/>
+                                        - Reçu de versement des frais de traitement du dossier ;
+                                        <br/>
+                                        <br/>
+                                        -Inscription sur la liste de dépôt des dossiers de candidatures (Service
+                                        Scolarité).
+
+                                    </td>
+                                    <td class="text-right text-center">
+                                        <br/>
+                                        Instantanément (ad nutum)
+                                    </td>
+
+                                    <td class="text-right text-center">
+                                        <br/>
+                                        Le Chef du Service Scolarité et Admissions
+                                    </td>
+
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <p>
+                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                        </p>
+
+                        <p>Les candidats sont priés de se présenter à 7h30au CESAG muni de leurs pièce d’identité, d’un
+                            stylo, et d’une machine à calculer. A la fin de l’épreuve écrite, l’ordre de passage à
+                            l’épreuve orale vous sera communiquée.
+
+
+                        </p>
+                        </div>
+
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>

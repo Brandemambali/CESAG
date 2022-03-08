@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <report
+                id="report_scolarite"
+                model="cesag.module"
+                string="DUPLICATA DU CERTIFICAT DE SCOLARITE"
+                name="cesag.report_scola"
+                file="cesag.report_scola"
+                report_type="qweb-html"/>
+
+
+        <report
+                id="report_carte"
+                model="cesag.module"
+                string="Réédition DU BADGE OU CARTE D’ETUDIANT"
+                name="cesag.report_carte"
+                file="cesag.report_carte"
+                report_type="qweb-html"/>
+
+        <report
+                id="report_bulletin"
+                model="cesag.module"
+                string="DUPLICATA D’UN BULLETIN DE NOTES D’UNE ANNEE ACADEMIQUE"
+                name="cesag.report_bull"
+                file="cesag.report_bull"
+                report_type="qweb-html"/>
+
+        <report
+                id="report_atte_diplome"
+                model="cesag.module"
+                string="DUPLICATA ATTESTATION DE DIPLOME"
+                name="cesag.report_dip"
+                file="cesag.report_dip"
+                report_type="qweb-html"/>
+
+        <report
+                id="report_passage_annee_sup"
+                model="cesag.module"
+                string="DUPLICATA DU CERTIFICAT DE PASSAGE EN ANNEE SUPERIEURE "
+                name="cesag.report_passage"
+                file="cesag.report_passage"
+                report_type="qweb-html"/>
+
+        <report
+                id="report_atte_depot_memoire"
+                model="cesag.module"
+                string="DUPLICATA DE L’ATTESTATION DE DEPOT DE MEMOIRE (DANS L’ATTENTE DE LA SESSION DU JURY DE VALIDATION)"
+                name="cesag.report_memoire"
+                file="cesag.report_memoire"
+                report_type="qweb-html"/>
+
+        <report
+                id="report_admission"
+                model="cesag.module"
+                string="DUPLICATA ATTESTATION D’ADMISSION PROVISOIRE  "
+                name="cesag.report_admi"
+                file="cesag.report_admi"
+                report_type="qweb-html"/>
+
+          <report
+                id="report_atte_suivi_cours"
+                model="cesag.module"
+                string="DUPLICATA DE L’ATTESTATION DE SUIVI DE COURS "
+                name="cesag.report_suivi"
+                file="cesag.report_suivi"
+                report_type="qweb-html"/>
+
+
+
+    </data>
+</odoo>

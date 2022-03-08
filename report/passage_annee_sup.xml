@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_passage">
+            <t t-set="company" t-value="res_company"/>
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="doc">
+                    <div class="header">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <br/>
+                                            <img t-if="company.logo"
+                                                 t-att-src="'data:image/png;base64,%s' % company.logo"
+                                                 style="height:95px;"/>
+
+                                            <p style="color:black;font-size:18px">Centre Africain d’Etudes
+                                                <br/>
+                                                Supérieures en Gestion
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="page">
+                            <br/>
+                        <br/>
+                        <br/>
+
+                        <div class="row">
+                            <h4 style="text-align:center;color:black;font-size:20px">
+                                <strong>
+                                    DUPLICATA DU CERTIFICAT DE PASSAGE EN ANNEE SUPERIEURE
+                                </strong>
+                            </h4>
+
+                        </div>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <table class="table table-condensed table-bordered">
+                            <thead class="text-center" style="background:green; color:black">
+                                <tr class="table-active">
+                                    <th class="table-primary text-center" style="font-size:13px">INTITULE DU DUPLICATA
+                                    </th>
+                                    <th class="table-success text-center" style="font-size:13px">CONDITION D'OBTENTION
+                                    </th>
+                                    <th class="table-success text-center" style="font-size:13px">DELAIS D'OBTENTION</th>
+                                    <th class="table-secondary text-center" style="font-size:13px">TARIF</th>
+                                </tr>
+                            </thead>
+                            <tbody class="invoice_tbody">
+                                <tr>
+                                    <td class="text-right text-center">
+                                        <br/>
+                                        DUPLICATA DU CERTIFICAT DE PASSAGE EN ANNEE SUPERIEURE
+                                    </td>
+                                    <td class="text-right text-center">
+                                        <br/>
+                                        -Avoir été bénéficiaire du certificat dont le duplicata est sollicité ;<br/>
+                                        -Déposer au Service Courrier une demande écrite adressée au Directeur de la Formation ;<br/>
+                                        - Joindre à la demande une copie des bulletins de notes
+                                        et une copie du reçu de paiement pour duplicata
+                                    </td>
+                                    <td class="text-right text-center">
+
+                                        <br/>
+                                        7 jours
+
+                                    </td>
+                                    <td class="text-right text-center">
+                                        <br/>
+                                       Deux Mille (2 000) Francs CFA
+                                    </td>
+
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <p>
+                            ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                        </p>
+
+                        <p>Les candidats sont priés de se présenter à 7h30au CESAG muni de leurs pièce d’identité, d’un
+                            stylo, et d’une machine à calculer. A la fin de l’épreuve écrite, l’ordre de passage à
+                            l’épreuve orale vous sera communiquée.
+
+
+                        </p>
+                        </div>
+
+                </t>
+            </t>
+        </template>
+
+    </data>
+</odoo>
